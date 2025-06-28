@@ -36,3 +36,13 @@ Cloud_Craft is a full-stack cloud-native project featuring a Node.js backend app
 - Domain routing handled via GCP DNS A record
 
 ---
+
+## 🔗 Links
+
+- 📂 GitHub Repo: [Cloud_Craft](https://github.com/poojapk0605/Cloud_Craft)  
+- 🔗 [LinkedIn Project](https://www.linkedin.com/in/poojakannanpk/)
+
+---
+
+## 📄 License  
+MIT License
