@@ -1,62 +1,49 @@
-☁️ Cloud_Craft – Full-Stack Infrastructure-as-Code Project on GCP
-Cloud_Craft is a backend-driven infrastructure project that demonstrates how to build and deploy a scalable, production-grade Node.js application on Google Cloud using Terraform and automation tools.
+# ☁️ CloudCraft – Full-Stack Node.js App with GCP & Terraform
 
-🧰 Tech Stack
-Backend: Node.js, Express.js, Jest
+CloudCraft is a backend application built from scratch using Node.js and deployed on Google Cloud Platform. It provisions cloud infrastructure using Terraform and implements secure CI/CD pipelines with auto-scaling VM deployment, startup scripts, and load balancing.
 
-Database: Google Cloud SQL (MySQL)
+---
 
-Infrastructure as Code: Terraform
+## 🧰 Tech Stack
 
-Automation & Imaging: Packer, GitHub Actions
+- **Backend:** Node.js, Express.js
+- **Database:** MySQL (Cloud SQL)
+- **Infrastructure:** Terraform, Packer, Google Cloud Platform
+- **CI/CD:** GitHub Actions
+- **Security & Auth:** bcrypt, JWT
+- **Testing:** Jest
+- **Messaging:** Pub/Sub for email verification
 
-Cloud Services: Google Compute Engine, Pub/Sub, Cloud DNS
+---
 
-Security: Bcrypt (password hashing), GCP IAM
+## 🛠️ Key Features
 
-High Availability: Load Balancing, Instance Templates, Managed Instance Groups
+- 🔐 Role-based user authentication with hashed passwords (bcrypt)  
+- 📧 GCP Pub/Sub integration for email verification  
+- 🧱 Terraform + Packer for full GCP VM provisioning  
+- 🚀 Startup scripts to automate application boot on VM launch  
+- 📦 CI/CD with GitHub Actions to rebuild and redeploy new VM templates on push  
+- ⚖️ Load balancing and autoscaling using instance templates  
+- 🛡️ Secured infrastructure with IAM and GCP firewall rules
 
-🛠️ Key Features
-✅ User registration & login with secure password hashing (bcrypt)
+---
 
-📬 Email verification implemented using GCP Pub/Sub
+## ⚙️ Deployment Overview
 
-🧪 Unit testing with Jest for backend APIs
+- Terraform creates VPC, subnets, VM instance, Cloud SQL, Pub/Sub topics  
+- Packer builds VM images that run the backend on startup  
+- GitHub Actions triggers redeployment upon commit  
+- Startup script installs dependencies and launches the Node app on instance boot  
+- Cloud SQL manages persistent MySQL data storage
 
-🛠 Infrastructure provisioned using Terraform (networking, compute, SQL)
+---
 
-📦 Packer used to build VM images with automated setup scripts
+## 🔗 Links
 
-🔁 GitHub Actions for CI/CD — automatic deployment on push
-
-🌐 Configured DNS A record for custom domain
-
-📈 Auto-scaling and load balancing for reliability and performance
-
-⚙️ Deployment Architecture
-Terraform provisions:
-
-VPC, subnets, firewall rules
-
-GCE VM Instance Template
-
-Managed Instance Group
-
-Cloud SQL instance
-
-Pub/Sub for messaging
-
-GitHub Actions pipeline:
-
-Runs tests
-
-Builds custom image via Packer
-
-Deploys updated template to instance group
-
-🔗 Links
 - 📂 GitHub Repo: [Cloud_Craft](https://github.com/poojapk0605/Cloud_Craft)  
 - 🔗 [LinkedIn Project](https://www.linkedin.com/in/poojakannanpk/)
 
-📄 License
-MIT License © 2025 Pooja Kannan
+---
+
+## 📄 License  
+MIT License
