@@ -37,6 +37,12 @@ Cloud_Craft is a full-stack cloud-native project featuring a Node.js backend app
 
 ---
 
+## 🧱 Architecture Overview
+
+![Cloud_Craft Architecture](../ArchitectureDiagram.jpg)
+
+---
+
 ## 🔗 Links
 
 - 📂 GitHub Repo: [Cloud_Craft](https://github.com/orgs/cloud-craft-project-fullstack/repositories)  
